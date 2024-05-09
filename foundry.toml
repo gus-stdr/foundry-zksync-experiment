@@ -3,4 +3,11 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+[profile.zksync]
+src = 'src'
+libs = ['lib']
+fallback_oz = true
+is_system = false
+mode = "3"
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

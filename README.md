@@ -1,66 +1,33 @@
-## Foundry
+## Kelp ZkSync Set up
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repo contains the smart contracts for the Kelp ZkSync integration.
 
-Foundry consists of:
+Ensure the installation from [https://docs.zksync.io/build/tooling/foundry/getting-started.html](https://docs.zksync.io/build/tooling/foundry/getting-started.html) is complete.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
+A changed version of Foundry must be installed to work with the zkSync compiler.
 
 ## Usage
 
 ### Build
 
 ```shell
-$ forge build
+$ forge build --zksync
 ```
 
 ### Test
 
 ```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
+$ forge test --zksync
 ```
 
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key> --zksync
 ```
 
 ### Help
 
 ```shell
 $ forge --help
-$ anvil --help
-$ cast --help
 ```
