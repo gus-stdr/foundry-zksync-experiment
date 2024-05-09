@@ -23,7 +23,7 @@ $ forge test --zksync
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key> --zksync
+$ forge script script/DeployRSETHRateReceiver.s.sol:DeployRSETHRateReceiver --rpc-url <your_rpc_url> --private-key <your_private_key> --zksync
 ```
 
 ### Help
@@ -31,3 +31,11 @@ $ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --pri
 ```shell
 $ forge --help
 ```
+
+## Deployed Contracts
+
+### ZKSync
+
+| Contract Name     | Proxy Address                              |
+| ----------------- | ------------------------------------------ |
+| RSETHRateReceiver | 0x6C2e862E7d03e1C9dDa1b30De69b201c7c52e3dB |
