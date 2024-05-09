@@ -12,3 +12,6 @@ docs/
 
 # Dotenv file
 .env
+
+# zk-sync compiler files
+zkout/

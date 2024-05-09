@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.21;
 
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {Ownable} from "openzeppelin/access/Ownable.sol";
 
 import {ILayerZeroReceiver} from "./interfaces/ILayerZeroReceiver.sol";
 
